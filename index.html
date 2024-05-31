@@ -1,11 +1,14 @@
+<!--  Start html document -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 1</title>
-    <link rel="stylesheet" href="./main.css">
-
+<!--  Set viewport size for device and link stylesheet from main.css file -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 1</title>
+        <link rel="stylesheet" href="./main.css">
+        
+<!--  alert function for button click can be in body or header -->
     <script type="text/javascript">
         function handleClick() {
             alert("Hello, this is just for fun");
@@ -22,6 +25,7 @@
             <div class="leftSide" style="background-image: url('./images/image1.jpg'); background-size: contain; background-repeat: no-repeat; ">
             </div>
             <div class="rightSide">
+                <!--  Form for inputs.  Mainly for astetics but has an alert function implemented for onSubmit (form fields completed) and onClick (button) -->
                 <form onsubmit="handleClick()">
                     <h2>Stay up-to-date!</h2>
                     <input 
