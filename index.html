@@ -3,29 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Week 1</title>
     <link rel="stylesheet" href="./main.css">
+
+    <script type="text/javascript">
+        function handleClick() {
+            alert("Hello, this is just for fun");
+        }
+    </script>
 </head>
 <body>
+    
     <main>
-        <div class="hero">
-            <div class="leftSide">
-                <h1>Web Applications and Backend Databases</h1>
+        <!--  Above the fold div with inline styling.  Input box - Non functional, broken into left/right sides  -->
+        <!--  Not styles for phone or tablet use -->
+        <h1>Web Applications and Backend Databases</h1>
+        <div class="hero" >
+            <div class="leftSide" style="background-image: url('./images/image1.jpg'); background-size: contain; background-repeat: no-repeat; ">
             </div>
             <div class="rightSide">
-                <form>
+                <form onsubmit="handleClick()">
                     <h2>Stay up-to-date!</h2>
-                    <input>
-
-                    </form>
+                    <input 
+                        placeholder="First Name"
+                        type="text"
+                    >
+                    <input 
+                        placeholder="Last Name"
+                        type="text"
+                    >
+                    <input 
+                        placeholder="Email"
+                        type="email"
+                    >
+                    <button onclick="handleClick()">Submit</button>
+               <!--  Form, for display only, will call an alert on form submit or button click -->      
                 </form>
+                <h2>• Website vs Web Application</h2>
+                <h2>• How does it work with a backend?</h2>
+                <h2>• Intranet vs Internet</h2>
+                
             </div>
         </div>
-        <div>
-
+ <!--  2nd section Website vs Web App -->
+        <div class="section">
+        <div class="leftSide" style="display: flex; flex-direction: column;">
+            <h2 style="color: white;">Website vs Web Application</h2>
+            <div class="dataPoint">
+                <h3>Websites: for information purposes</h3>
+                <h4 >Minimal data being passed other than maybe a capture form or link to another page</h4>
+            </div>
+            <div class="dataPoint">
+                <h3>Web Apps</h3>
+                <h4> Transfer data between user and DB for productivity purposes</h4>
+                <h4> (e.g. Input customer data, schedule appointments, sales, shopping carts, etc. )</h4>
+            </div>
+            <div class="dataPoint">
+                <h3>Grey Area</h3>
+                <h4>Websites can capture info and try to make sales much like Apps</h4>
+                <h4>This area can be debatable about functionality between the Apps and Sites on which is which.</h4>
+            </div>
+        </div>
+        <div class="rightSide" >
+            <div class="photoBubble">
+                <img src="./images/image2.jpg"/>
+            </div>
+        </div>
+        
+        </div>
+        <!--  3rd section Website vs Web App -->
+        <div class="section">
+            <div class="leftSide">
+                <div class="photoBubble">
+                    <img src="./images/image3.jpg"/>
+                </div>
+            </div>
+            <div class="rightSide"style="display: flex; flex-direction: column;">
+                <h2 style="color: white;">Web Application</h2>
+                <div class="dataPoint">
+                    <h3>Multiple Request/Response API's</h3>
+                    <h4>Data sent between user and backend database</h4>
+                    <h4> (e.g. User adds item to cart on shopping on Amazon, collects payment/shipping info, backend stores info, generates a payment transaction, and a business will then fullfill the transaction. )</h4>
+                </div>
+                <div class="dataPoint">
+                    <h3>Data Transfer</h3>
+                    <h4> User inputs data from computer</h4>
+                    <h4>Backend storage or functionality is then implemented based on the programing.  Whether storing a photo or sending a message, backed functionality is what allows the ability to do more than look at data</h4>
+                </div>
+                <div class="dataPoint">
+                    <h3>Grey Area</h3>
+                    <h4>Websites can capture info and try to make sales much like Apps</h4>
+                    <h4>This area can be debatable about functionality between the Apps and Sites on which is which.</h4>
+                </div>
+            </div>
+            
+        </div>
+        <!--  4th section Website vs Web App -->
+        <div class="section">
+        <div class="leftSide">
+            <div class="photoBubble">
+                <img src="./images/image4.jpg"/>
+            </div>
+        </div>
+        <div class="rightSide"style="display: flex; flex-direction: column;">
+            <h2 style="color: white;">Intranet / Internet</h2>
+            <div class="dataPoint">
+                <h3>Intranet</h3>
+                <h4>Internal localization of computers and devices in a local area</h4>
+                <h4> (e.g. Local linking between computer or other devices in office, building or campus. Computer to local printer or onsite storage )</h4>
+            </div>
+            <div class="dataPoint">
+                <h3>Business and Intranet Examples</h3>
+                <h4>Local Sharedrive</h4>
+                <h4>Inter-Office Printing</h4>
+                <h4>Industrial Machine Programing (can be internet as well)</h4>
+            </div>
+            <div class="dataPoint">
+                <h3>Internet and Examples</h3>
+                <!-- <br> added for styling-->
+                <h4>Linked Globally and can access data anywhere <br>(given access ability)</h4>
+                <h4>Offsite storage</h4>
+                <h4>Google Searches</h4>
+                <h4>Email</h4>
+                <h4>IOT devices</h4>
+                <h4>Microsoft Sharepoint</h4>
+            </div>
+        </div>
         </div>
         
     </main>
-    
+   
 </body>
 </html>

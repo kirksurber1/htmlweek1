@@ -1,16 +1,108 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+    transition: .5s;  
+    text-wrap: wrap;  
+}
+h3:hover, h4:hover {
+    color: blue;
+
+}
 
 .hero {
     display: flex;
     width: 100%;
-    height: 98vh;
+    height: 95vh;
     border: 0px;
     border-radius: 0px 0px 15px 15px;
     box-shadow: rgba(0, 0, 0, .17) 0px 2px 5px 10px;
+    justify-content: center;
+    overflow: hidden;
+    
 }
 .leftSide {
+    display: flex;
     width: 50%;
+    height: 99vh;
     text-align: center;
+    justify-content: center;
+    background-size: cover;
+    overflow: hidden;
+    
 }
 .rightSide {
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    border: 1px solid rgba(0, 0, 0, .17);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, .05) 0px 5px 7px 7px;
+    margin: 10px auto;
+    padding-bottom: 30px;
+}
+input {
+    width: 250px;
+    margin: 10px auto;
+    padding: 5px;
+}
+button {
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px 25px;
+    align-items: center;
+    box-shadow: rgba(70, 70, 70, .12) 10px 10px 15px,
+                rgba(255, 255, 255, 1) -10px -10px 15px;
+    border: 1px solid rgba(0, 0, 0, .075);
+    background-image: linear-gradient(to right, #ff8008 0%, #FFC837 51%, #ff8008 100%);   
+    background-size: 200%;
+    transition: .5s;
+  
+  }
+  
+  button:hover {
+    background-position: right center;
+  }
+.section {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    background-color: #3c3c3c;
+}
+
+.photoBubble {
+    border: 1px solid rgba(255, 255, 255, .17);
+    border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, .55) 0px 5px 7px 12px;
+    overflow: hidden;
+    scale: .75;
+}
+
+.dataPoint {
+    width: 50%;
+    border: 1px solid firebrick;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px auto;
+    background-color: #f5f5f5;
+    transition: .5s;
+}
+.dataPoint:hover {
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+
+    border: 4px solid transparent;
+    scale: 1.2;
+
 }
